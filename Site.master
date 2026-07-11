@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="Styles/style.css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div id="header"> <!-- start of header -->
+		<span class="signboard"></span>
+		<ul id="infos">
+			<li class="home"> 
+				<a href="Default.aspx">HOME</a> 
+			</li>
+			<li class="phone">
+				<a href="#">7045335154</a> 
+			</li>
+			<li class="address">
+				<a href="#">foodordering2016proj@gmail.com</a> 
+			</li>
+		</ul>
+		<a href="#" id="logo"></a>
+		<ul id="navigation">
+			<li><a href="Default.aspx"><span>Home</span></a></li>
+			<li><a href="About.aspx"><span>About us</span></a></li>
+			<li><asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                         <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server"><span>Log In</span></a> 
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                         <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]</span>
+                    </LoggedInTemplate>
+                </asp:LoginView></li>
+		</ul> <!-- /#navigation -->
+	</div> <!-- end of header -->
+
+    <div id="body"> <!-- start of content --> 
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+	</div> <!-- end of content -->
+
+	<div id="footer"> <!-- start of footer -->
+		<ul class="advertise">
+			<li class="delivery">
+				<h2>Hungry? We Deliver</h2>
+				<p>Free home deliver with minimum time</p>
+			</li>
+			<li class="event">
+				<h2>Party! Party!</h2>
+				<p>Celebrate your<br /> Special Events with Us</p>
+			</li>
+			<li class="connect">
+				<h2>Let's Keep in Touch</h2>
+				<a href="" target="_blank" class="fb" title="Facebook"></a> 
+				<a href="" target="_blank" class="twitr" title="Twitter"></a>
+			</li>
+		</ul>
+		<div>
+			
+			<span>&copy; Copyright 2017. All Rights Reserved to Rukhsar Pometkar.</span>
+		</div>
+	</div> <!-- end of footer -->
+    
+    </form>
+</body>
+</html>
+
+
+<%--<div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    My ASP.NET Application
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>--%>
