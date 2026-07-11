@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34031.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Food Ordering", "Food Ordering\", "{5DB40C3D-8895-49D4-93F7-E2FFFE45577E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Food Ordering"
+		Debug.AspNetCompiler.PhysicalPath = "Food Ordering\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Food Ordering\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Food Ordering"
+		Release.AspNetCompiler.PhysicalPath = "Food Ordering\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Food Ordering\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57695"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{2B2771E1-57CA-4E3B-A920-8920A1896E38} = {2B2771E1-57CA-4E3B-A920-8920A1896E38}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Bank", "Bank\", "{2B2771E1-57CA-4E3B-A920-8920A1896E38}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Bank"
+		Debug.AspNetCompiler.PhysicalPath = "Bank\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Bank\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Bank"
+		Release.AspNetCompiler.PhysicalPath = "Bank\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Bank\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57697"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DB40C3D-8895-49D4-93F7-E2FFFE45577E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB40C3D-8895-49D4-93F7-E2FFFE45577E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B2771E1-57CA-4E3B-A920-8920A1896E38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B2771E1-57CA-4E3B-A920-8920A1896E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {054CD31F-CB41-45DF-907E-8E1519E0D9F2}
+	EndGlobalSection
+EndGlobal
